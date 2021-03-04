@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link href="app/css/styles.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="app/css/styles.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="app/css/styles.css?v=<?html echo time(); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="res/LGlogo.ico" />
+    <link rel="icon" href="res/LGlogo.ico">
     <title>Lou Geh Supermarket</title>
+    <style>
+        body{
+            background-image: url('res/image.png');
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="index.php"><img src="res/LGlongLogo.png" alt="Lou Geh Logo"></a>
+            <a href="index.html"><img src="res/LGlongLogo.png" alt="Lou Geh Logo"></a>
         </div>
         <nav>
         <ul class="nav_links">     
-			<li><a href="index.php">Home</a></li>
-			<li><a href="sign-in.php">Shop</a></li>
-            <li><a href="suppliers.php">Suppliers</a></li>
-            <li><a href="sign-in.php">Sign-in</a></li>
-            <li><a href="sign-up.php">Sign-up</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="sign-in.html">Shop</a></li>
+            <li><a href="suppliers.html">Suppliers</a></li>
+            <li><a id="myBtn">Sign-in</a></li>
             <li><a href="#" class="fa fa-shopping-cart" style="font-size:36px"></a></li>
         </ul>
         </nav>
@@ -31,8 +39,28 @@
         <h2>everything</h2>
         <h1>But we might just have the THING</h1>
         <h1>for YOU!</h1>
-        <a href="sign-in.php"><button>SHOP NOW</button></a>
+        <a href="shop.html"><button id="myBtn">SHOP NOW</button></a>
     </div>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div>
+          <div class="container">
+            <span class="close">&times;</span>
+            <h1></h1>
+            <h1>YOU NEED TO SIGN IN BEFORE YOU CAN PROCEED!</h1>
+            <form action="auth.php" method="post">
+                <input type="text" name="username" placeholder="Username..." required>
+                <input type="password" name="password" placeholder="Password..." required>
+                <input type="password" name="password2" placeholder="Confirm password..." required>
+                <input type="submit" name="login" value="LOGIN">
+                <p>Don't have an account? Sign-up <a href="sign-up.php">here!</a>
+            </form>
+          </div>
+        </div>
+    </div>
+
+    <script src="app/js/app.js"></script>
 
 </body>
 
