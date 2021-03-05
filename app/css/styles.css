@@ -1,6 +1,7 @@
 @import 'globals.css';
 @import 'shop.css';
 @import 'modal.css';
+@import 'wrapper.css';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
 header {
@@ -20,7 +21,6 @@ header {
 .logo img {
   height: 65px;
   outline-style: none;
-  transition: transform 0.2s;
   transition: transform 0.5s ease;
 }
 
@@ -55,6 +55,27 @@ header {
   font-size: 20px;
 }
 
+.nav_links button {
+  padding: 2px 30px;
+  margin-top: 5px;
+  border-radius: 80px;
+  border-style: none;
+  background-color: #fff;
+  color: #f34e62;
+  font-size: 30px;
+  outline-style: none;
+  border-color: #d35866;
+  border-style: inset;
+  font-weight: 10px;
+}
+
+.nav_links button:hover {
+  background-color: #f34e62;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 /* Change the link color to #111 (black) on hover */
 .nav_links a:hover {
   background-color: none;
@@ -86,18 +107,21 @@ header {
   color: rgb(138, 138, 138);
 }
 
-.nav_links input[type='submit']:hover {
+.nav_links button {
+  transition: 1s;
+}
+/* .nav_links input[type='submit']:hover {
   background-color: none;
   opacity: 0.5;
-}
+} */
 
 .banner {
   max-width: auto;
   border-radius: 20px;
   padding: 40px;
-  background: #df293ee3;
+  background: #ffffffe3;
   box-sizing: border-box;
-  color: #fff;
+  color: rgb(62, 66, 57);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -105,6 +129,10 @@ header {
   text-align: center;
   transition: 1s;
   margin-top: 30px;
+}
+
+.banner image {
+  width: 30;
 }
 
 .banner h1 {
@@ -115,23 +143,38 @@ header {
   text-decoration: line-through;
   text-transform: uppercase;
   font-size: 55px;
-  color: rgb(88, 85, 85);
+  color: #df293e;
 }
 
 .banner button {
-  padding: 30px 50px;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 100px;
+  border-radius: 80px;
+  border-style: none;
+  background-color: #fff;
+  color: #f34e62;
+  font-size: 60px;
+  outline-style: none;
+  border-color: #d35866;
+  border-style: inset;
+  font-weight: 10px;
+  /* padding: 30px 50px;
   margin-top: 10px;
   border-radius: 100px;
   border-style: none;
-  background-color: rgb(62, 66, 57);
+  background-color: #df293e;
   color: #fff;
   cursor: pointer;
   font-size: 60px;
-  outline-style: none;
+  outline-style: none; */
 }
 
 .banner button:hover {
   background-color: rgba(112, 112, 112, 0.9);
+  transition: 0.5s;
+  color: #fff;
+  background-color: #f34e62;
 }
 
 .about h2 {

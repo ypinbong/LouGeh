@@ -1,9 +1,10 @@
-#myBtn:hover {
+/* .myBtn:hover {
   cursor: pointer;
-}
+} */
 
 /* The Modal (background) */
 .modal {
+  display: grid;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -18,29 +19,26 @@
   transition: 1s;
 }
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #fff;
   float: right;
   font-size: 28px;
   font-weight: bold;
-  top: 0;
+  background-color: #e54f60;
+  padding: 0 12px;
+  border-radius: 50px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
+  background-color: #3e4239;
 }
 
 .container {
@@ -73,13 +71,18 @@ input[type='password'] {
 .container input[type='submit'] {
   padding: 10px 15px;
   margin-top: 10px;
-  border-radius: 10px;
+  border-radius: 100px;
   border-style: none;
-  background-color: #e54f60;
-  color: #fff;
+  background-color: #fff;
+  border-color: #d35866;
+  border-style: inset;
+  color: #d35866;
+  font-weight: bold;
   cursor: pointer;
+  transition: 1s;
 }
 
 .container input[type='submit']:hover {
-  background-color: rgba(112, 112, 112, 0.9);
+  background-color: #f34e62;
+  color: #fff;
 }

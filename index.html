@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link href="app/css/styles.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="app/css/styles.css?v=<?html echo time(); ?>">
+    <link rel="stylesheet" href="app/css/styles.css?v=?html echo time(); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="res/LGlogo.ico">
     <title>Lou Geh Supermarket</title>
@@ -16,47 +16,49 @@
             -o-background-size: cover;
             background-size: cover;
             background-position: fixed;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
-<body>
+<body class="background">
     <header>
         <div class="logo">
-            <a href="index.html"><img src="res/LGlongLogo.png" alt="Lou Geh Logo"></a>
+            <a href="shop.html"><img src="res/LGlongLogo.png" alt="Lou Geh Logo"></a>
         </div>
         <nav>
         <ul class="nav_links">     
-			<li><a href="index.html">Home</a></li>
-			<li><a href="shop.html">Shop</a></li>
-            <li><a href="suppliers.html">Suppliers</a></li>
-            <li><a id="myBtn">Sign-in</a></li>
-            <li><a href="#" class="fa fa-shopping-cart" style="font-size:36px"></a></li>
+			<!-- <li><a href="index.html">Home</a></li> -->
+			<!-- <li><a href="shop.html">Shop</a></li> -->
+            <!-- <li><a href="suppliers.html">Suppliers</a></li> -->
+            <li><button id="myBtn">LOGIN</button></li>
+            <!-- <li><a href="#" class="fa fa-shopping-cart" style="font-size:36px"></a></li> -->
         </ul>
         </nav>
     </header>
 
     <div class="banner">
+        <img src="res/undraw_shopping_app_flsj.svg" alt="" width="400" height="200">
         <h1>We may not have</h1>
         <h2>everything</h2>
         <h1>But we might just have the THING</h1>
         <h1>for YOU!</h1>
-        <a href="shop.html"><button id="myBtn">SHOP NOW</button></a>
+        <h2>shop with us</h2>
     </div>
 
     <div id="myModal" class="modal">
         <!-- Modal content -->
         <div>
-          <div class="container">
-            <span class="close">&times;</span>
-            <h1>YOU NEED TO SIGN IN BEFORE YOU CAN PROCEED!</h1>
-            <form action="auth.php" method="post">
-                <input type="text" name="username" placeholder="Username..." required>
-                <input type="password" name="password" placeholder="Password..." required>
-                <input type="password" name="password2" placeholder="Confirm password..." required>
-                <input type="submit" name="login" value="LOGIN">
-                <p>Don't have an account? Sign-up <a href="sign-up.php">here!</a>
-            </form>
-          </div>
+            <div class="container">
+                <span class="close">&times;</span>
+                <img src="res/undraw_authentication_fsn5.svg" alt="" width="200" height="100">
+                <h1>AUTHORIZED PERSON ONLY!</h1>
+                <form action="" method="post">
+                    <input type="text" name="username" placeholder="Username..." required>
+                    <input type="password" name="password" placeholder="Password..." required>
+                    <input type="password" name="password2" placeholder="Confirm password..." required>
+                    <input type="submit" name="login" value="LOGIN">
+                </form>
+            </div>
         </div>
     </div>
 
