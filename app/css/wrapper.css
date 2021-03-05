@@ -44,12 +44,23 @@
   border: 1px solid #dddddd;
   text-align: center;
   padding: 8px;
-  padding-right: 100px;
 }
 
 .wrapper td {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
-  padding-right: 100px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.wrapper span {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.wrapper span:hover {
+  cursor: pointer;
 }
