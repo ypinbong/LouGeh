@@ -8,3 +8,22 @@
   margin: 10px;
   border: 3px solid black;
 }
+
+.addBtn {
+  padding: 2px 30px;
+  margin-top: 5px;
+  border-radius: 80px;
+  border-style: none;
+  background-color: #fff;
+  color: #f34e62;
+  font-size: 30px;
+  outline-style: none;
+  border-color: #d35866;
+  border-style: inset;
+  font-weight: 10px;
+}
+
+.addBtn:hover {
+  cursor: pointer;
+  align-content: center;
+}

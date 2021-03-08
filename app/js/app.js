@@ -9,6 +9,14 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+// $(document).ready(function(){
+// 	$('#myBtn').click(function(){
+// 		$('#myModal').modal({
+// 			backdrop: 'static'
+// 		});
+// 	}); 
+// });
+
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -25,3 +33,5 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+JsBarcode("#barcode", "Hi world!");

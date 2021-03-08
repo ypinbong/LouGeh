@@ -6,7 +6,7 @@
   margin: 20px auto;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .box1 {
@@ -31,13 +31,13 @@
 .wrapper h2 {
   text-align: center;
   padding: 20px;
-  margin-bottom: 20px;
 }
 
 .wrapper table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .wrapper th {
@@ -63,4 +63,26 @@ tr:nth-child(even) {
 
 .wrapper span:hover {
   cursor: pointer;
+}
+
+.addBtn {
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  border-radius: 80px;
+  border-style: none;
+  background-color: rgb(22, 157, 235);
+  color: #ffffff;
+  font-size: 25px;
+  outline-style: none;
+  align-content: center;
+  grid-column: 3;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.addBtn:hover {
+  cursor: pointer;
+  grid-column: 3;
+  background-color: rgb(29, 158, 87);
 }

@@ -42,6 +42,24 @@
         
         <div class="box box2">
             <h2>Customers</h2>
+            <button id="myBtn" class="addBtn"><span>&plus;</span>Add a customer</button>
+
+            <div id="myModal" class="modal" data-backdrop="static">
+                <!-- Modal content -->
+                <div>
+                    <div class="container">
+                        <span class="close">&times;</span>
+                        <img src="res/undraw_Add_user_re_5oib.svg" alt="" width="200" height="100">
+                        <h1>Fill in customer details</h1>
+                        <form action="" method="post">
+                            <input type="text" name="custName" placeholder="Name..." required>
+                            <input type="text" name="custAddress" placeholder="Address..." required>
+                            <input type="text" name="custContact" placeholder="Contact #..." required>
+                            <input type="submit" name="login" value="Add">
+                        </form>
+                    </div>
+                </div>
+            </div>
             <table>
                 <tr>
                     <th>ID</th>

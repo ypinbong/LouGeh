@@ -6,7 +6,6 @@
     <!-- <link href="app/css/styles.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="app/css/styles.css?v=<?html echo time(); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <link rel="icon" href="res/LGlogo.ico">
     <title>Lou Geh Supermarket</title>
     <style>
@@ -43,64 +42,98 @@
 
         <div class="box box2">
             <h2>Products</h2>
+            <button id="myBtn" class="addBtn"><span>&plus;</span>Add a product</button>
+
+            <div id="myModal" class="modal" data-backdrop="static">
+                <!-- Modal content -->
+                <div>
+                    <div class="container">
+                        <span class="close">&times;</span>
+                        <img src="res/undraw_empty_cart_co35.svg" alt="" width="200" height="100">
+                        <h1>Fill in product details</h1>
+                        <form action="" method="post">
+                            <input type="text" name="productName" placeholder="Name..." required>
+                            <input type="text" name="productDesc" placeholder="Description..." required>
+                            <input type="text" name="price" placeholder="Price..." required>
+                            <input type="text" name="qty" placeholder="Quantity..." required>
+                            <input type="submit" name="login" value="Add">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
             <table>
             <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Address</th>
-                <th>Contact #</th>
+                <th>Barcode</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
                 <th>Tools</th>
             </tr>
             <tr>
                 <td>0001</td>
-                <td>Alfreds Futterkiste</td>
-                <td>2713  Walnut Drive</td>
-                <td>202-555-0121</td>
+                <td>Milkocity</td>
+                <td><img src="res/milkocity.png"></img></td>
+                <td>Fresh Milk</td>
+                <td>Php 100.00</td>
+                <td>3</td>
                 <td><span class="material-icons">&#xe254;</span><span class="material-icons">
                     delete
                     </span></td>
             </tr>
             <tr>
                 <td>0002</td>
-                <td>Byelobog Milan</td>
-                <td>3005  Highland View Drive</td>
-                <td>202-555-0138</td>
+                <td>Meatastic</td>
+                <td><img src="res/Meatastic.png"></img></td>
+                <td>Fresh Meat</td>
+                <td>Php 220.00</td>
+                <td>5</td>
                 <td><span class="material-icons">&#xe254;</span><span class="material-icons">
                     delete
                     </span></td>
             </tr>
             <tr>
                 <td>0003</td>
-                <td>Antonija Anneke</td>
-                <td>4277  Felosa Drive</td>
-                <td>202-555-0175</td>
+                <td>Treehouse Meat</td>
+                <td><img src="res/Treehouse.png"></img></td>
+                <td>Meat from Treehouse</td>
+                <td>Php 300.00</td>
+                <td>11</td>
                 <td><span class="material-icons">&#xe254;</span><span class="material-icons">
                     delete
                     </span></td>
             </tr>
             <tr>
                 <td>0004</td>
-                <td>Masozi Césaire</td>
-                <td>2437  Pearlman Avenue</td>
-                <td>202-555-0176</td>
+                <td>Milklaza</td>
+                <td><img src="res/Milklaza.png"></img></td>
+                <td>Fresh Milk</td>
+                <td>Php 50.00</td>
+                <td>10</td>
                 <td><span class="material-icons">&#xe254;</span><span class="material-icons">
                     delete
                     </span></td>
             </tr>
             <tr>
                 <td>0005</td>
-                <td>María Luisa Ntombizodwa</td>
-                <td>1463  Lynch Street</td>
-                <td>202-555-0126</td>
+                <td>Eggverse</td>
+                <td><img src="res/Eggverse.png"></img></td>
+                <td>Fresh Eggs</td>
+                <td>Php 7.00</td>
+                <td>1000</td>
                 <td><span class="material-icons">&#xe254;</span><span class="material-icons">
                     delete
                     </span></td>
             </tr>
             <tr>
                 <td>0006</td>
-                <td>Heino Emalee</td>
-                <td>2063  Derek Drive</td>
-                <td>202-555-0124</td>
+                <td>Milka</td>
+                <td><img src="res/milka.png"></img></td>
+                <td>Fresh Milk</td>
+                <td>Php 100.00</td>
+                <td>3</td>
                 <td><span class="material-icons">&#xe254;</span><span class="material-icons">
                     delete
                     </span></td>
@@ -112,6 +145,7 @@
     </div>
 
     <script src="app/js/app.js"></script>
+    <script src="JsBarcode.all.min.js"></script>
 
 </body>
 

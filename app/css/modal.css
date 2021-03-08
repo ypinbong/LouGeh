@@ -86,3 +86,19 @@ input[type='password'] {
   background-color: #f34e62;
   color: #fff;
 }
+
+.container select {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 2px -2px #e54f60;
+  padding: 12px 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  color: gray;
+}
+
+.container option {
+  color: black;
+}
