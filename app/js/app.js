@@ -33,5 +33,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-JsBarcode("#barcode", "Hi world!");
