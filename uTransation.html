@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="app/css/styles.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="app/css/styles.css?v=<?html echo time(); ?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="res/LGlogo.ico">
+    <title>Lou Geh Supermarket</title>
+    <style>
+        body{
+            background-image: url('res/pexels-clem-onojeghuo-375896.jpg');
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="admin.html"><img src="res/LGlongLogo.png" alt="Lou Geh Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav_links">     
+                <!-- <li><a href="index.html">Home</a></li> -->
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="customer.html">Customers</a></li>
+                <li><a href="supplier.html">Suppliers</a></li>
+                <li><a href="transaction.html">Transactions</a></li>
+                <!-- <li><a href="#" class="fa fa-shopping-cart" style="font-size:36px"></a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+        <div class="box box3">
+            <h2>Transaction Details</h2>
+            <li><strong>Transaction ID#:</strong> ###</li>
+            <li><strong>Type:</strong> Delivery/Sales</li>
+            <li><strong>Date:</strong> mm/dd/yy</li>
+        </div>
+
+        <div class="box box2">
+            <table>
+                <tr>
+                    <th>Qty</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Tools</th>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Meatastic</td>
+                    <td>Php 220.00</td>
+                    <td><span class="material-icons">&#xe254;</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Milkocity</td>
+                    <td>Php 100.00</td>
+                    <td><span class="material-icons">&#xe254;</span></td>
+                </tr>
+                <tr>
+                    <td>1200</td>
+                    <td>Eggverse</td>
+                    <td>Php 7.00</td>
+                    <td><span class="material-icons">&#xe254;</span></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Milka</td>
+                    <td>Php 50.00</td>
+                    <td><span class="material-icons">&#xe254;</span></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Treehouse Meat</td>
+                    <td>Php 300.00</td>
+                    <td><span class="material-icons">&#xe254;</span></td>
+                </tr>
+                <tr class="total">
+                    <td></td>
+                    <td><strong>Total:</strong></td>
+                    <td><strong>Php 10,240.00</strong></td>
+                    <td></td>
+                </tr>
+                
+                </table>
+        </div>
+
+    </div>
+
+    <!-- <script src="app/js/app.js"></script> -->
+
+</body>
+
+<footer>
+Copyright &copy; 2019 Yong Pin L. Bong
+</footer>
+
+</html>

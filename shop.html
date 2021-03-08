@@ -22,7 +22,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="res/LGlongLogo.png" alt="Lou Geh Logo"></a>
+            <a href="admin.html"><img src="res/LGlongLogo.png" alt="Lou Geh Logo"></a>
         </div>
         <nav>
             <ul class="nav_links">     
@@ -56,6 +56,9 @@
                             <input type="text" name="productDesc" placeholder="Description..." required>
                             <input type="text" name="price" placeholder="Price..." required>
                             <input type="text" name="qty" placeholder="Quantity..." required>
+                            <form method="POST" action="" enctype="multipart/form-data"> 
+                                <input class="uploadBtn" type="file" name="uploadfile" value="Upload Barcode"/> 
+                            </form>
                             <input type="submit" name="login" value="Add">
                         </form>
                     </div>
@@ -68,6 +71,7 @@
                 <th>Name</th>
                 <th>Barcode</th>
                 <th>Description</th>
+                <th>Supplier</th>
                 <th>Price</th>
                 <th>Quantity</th>
                 <th>Tools</th>
@@ -77,66 +81,60 @@
                 <td>Milkocity</td>
                 <td><img src="res/milkocity.png"></img></td>
                 <td>Fresh Milk</td>
+                <td>Casey's General Stores</td>
                 <td>Php 100.00</td>
                 <td>3</td>
-                <td><span class="material-icons">&#xe254;</span><span class="material-icons">
-                    delete
-                    </span></td>
+                <td><span class="material-icons">&#xe254;</span></td>
             </tr>
             <tr>
                 <td>0002</td>
                 <td>Meatastic</td>
                 <td><img src="res/Meatastic.png"></img></td>
                 <td>Fresh Meat</td>
+                <td>Century Link</td>
                 <td>Php 220.00</td>
                 <td>5</td>
-                <td><span class="material-icons">&#xe254;</span><span class="material-icons">
-                    delete
-                    </span></td>
+                <td><span class="material-icons">&#xe254;</span></td>
             </tr>
             <tr>
                 <td>0003</td>
                 <td>Treehouse Meat</td>
                 <td><img src="res/Treehouse.png"></img></td>
                 <td>Meat from Treehouse</td>
+                <td>Treehouse</td>
                 <td>Php 300.00</td>
                 <td>11</td>
-                <td><span class="material-icons">&#xe254;</span><span class="material-icons">
-                    delete
-                    </span></td>
+                <td><span class="material-icons">&#xe254;</span></td>
             </tr>
             <tr>
                 <td>0004</td>
                 <td>Milklaza</td>
                 <td><img src="res/Milklaza.png"></img></td>
                 <td>Fresh Milk</td>
+                <td>María Luisa Ntombizodwa</td>
                 <td>Php 50.00</td>
                 <td>10</td>
-                <td><span class="material-icons">&#xe254;</span><span class="material-icons">
-                    delete
-                    </span></td>
+                <td><span class="material-icons">&#xe254;</span></td>
             </tr>
             <tr>
                 <td>0005</td>
                 <td>Eggverse</td>
                 <td><img src="res/Eggverse.png"></img></td>
                 <td>Fresh Eggs</td>
+                <td>Chesapeake Energy</td>
                 <td>Php 7.00</td>
                 <td>1000</td>
-                <td><span class="material-icons">&#xe254;</span><span class="material-icons">
-                    delete
-                    </span></td>
+                <td><span class="material-icons">&#xe254;</span></td>
             </tr>
             <tr>
                 <td>0006</td>
                 <td>Milka</td>
                 <td><img src="res/milka.png"></img></td>
                 <td>Fresh Milk</td>
+                <td>Lithia Motors</td>
                 <td>Php 100.00</td>
                 <td>3</td>
-                <td><span class="material-icons">&#xe254;</span><span class="material-icons">
-                    delete
-                    </span></td>
+                <td><span class="material-icons">&#xe254;</span></td>
             </tr>
             </table>
 

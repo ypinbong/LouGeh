@@ -22,7 +22,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="res/LGlongLogo.png" alt="Lou Geh Logo"></a>
+            <a href="admin.html"><img src="res/LGlongLogo.png" alt="Lou Geh Logo"></a>
         </div>
         <nav>
             <ul class="nav_links">     
@@ -57,7 +57,7 @@
                                 <option value="delivery">Delivery</option>
                                 <option value="delivery">Sales</option>
                             </select>
-                            <input type="text" name="productName" placeholder="Product Name..." required>
+                            <input type="text" name="productName" placeholder="Product Name..." required> 
                             <input type="text" name="transDate" placeholder="Date (mm/dd/yy)..." required>
                             <input type="text" name="productDescription" placeholder="Product Desription..." required>
                             <input type="text" name="price" placeholder="Price..." required>
@@ -67,62 +67,54 @@
                     </div>
                 </div>
             </div>
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Type</th>
-                    <th>Date</th>
-                    <th>Tools</th>
-                </tr>
-                <tr>
-                    <td>0001</td>
-                    <td>Delivery</td>
-                    <td>03/06/2021</td>
-                    <td><span class="material-icons">&#xe254;</span><span class="material-icons">
-                        delete
-                        </span></td>
-                </tr>
-                <tr>
-                    <td>0002</td>
-                    <td>Sales</td>
-                    <td>03/06/2021</td>
-                    <td><span class="material-icons">&#xe254;</span><span class="material-icons">
-                        delete
-                        </span></td>
-                </tr>
-                <tr>
-                    <td>0003</td>
-                    <td>Sales</td>
-                    <td>03/06/2021</td>
-                    <td><span class="material-icons">&#xe254;</span><span class="material-icons">
-                        delete
-                        </span></td>
-                </tr>
-                <tr>
-                    <td>0004</td>
-                    <td>Delivery</td>
-                    <td>03/06/2021</td>
-                    <td><span class="material-icons">&#xe254;</span><span class="material-icons">
-                        delete
-                        </span></td>
-                </tr>
-                <tr>
-                    <td>0005</td>
-                    <td>Delivery</td>
-                    <td>03/06/2021</td>
-                    <td><span class="material-icons">&#xe254;</span><span class="material-icons">
-                        delete
-                        </span></td>
-                </tr>
-                <tr>
-                    <td>0006</td>
-                    <td>Sales</td>
-                    <td>03/06/2021</td>
-                    <td><span class="material-icons">&#xe254;</span><span class="material-icons">
-                        delete
-                        </span></td>
-                </tr>
-                </table>
+            <table class="table-fixed">
+                <thead>
+                    <tr>
+                        <th class="col">ID</th>
+                        <th class="col">Type</th>
+                        <th class="col">Date</th>
+                        <th class="col">Tools</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col">0001</td>
+                        <td class="col"><a href="uTransation.html">Delivery</a></td>
+                        <td class="col">03/06/2021</td>
+                        <td class="col"><span class="material-icons">&#xe254;</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col">0002</td>
+                        <td class="col"><a href="uTransation.html">Sales</a></td>
+                        <td class="col">03/06/2021</td>
+                        <td class="col"><span class="material-icons">&#xe254;</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col">0003</td>
+                        <td class="col"><a href="uTransation.html">Sales</a></td>
+                        <td class="col">03/06/2021</td>
+                        <td class="col"><span class="material-icons">&#xe254;</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col">0004</td>
+                        <td class="col"><a href="uTransation.html">Delivery</a></td>
+                        <td class="col">03/06/2021</td>
+                        <td class="col"><span class="material-icons">&#xe254;</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col">0005</td>
+                        <td class="col"><a href="uTransation.html">Delivery</a></td>
+                        <td class="col">03/06/2021</td>
+                        <td class="col"><span class="material-icons">&#xe254;</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col">0006</td>
+                        <td class="col"><a href="uTransation.html">Sales</a></td>
+                        <td class="col">03/06/2021</td>
+                        <td class="col"><span class="material-icons">&#xe254;</span></td>
+                    </tr>
+                </tbody>
+            </table>
 
         </div>
 
